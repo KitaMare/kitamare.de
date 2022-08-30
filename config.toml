@@ -1,0 +1,56 @@
+baseURL = 'http://kitamare.de/'
+languageCode = 'de-de'
+title = 'Kitamare gGmbH'
+themesDir = "themes"
+#theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
+theme = "ananke"
+pluralizelisttitles = false
+
+resourceDir = "resources"
+
+DefaultContentLanguage = "de"
+SectionPagesMenu = "main"
+Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[languages]
+  [languages.de]
+    title = "Kitamare gGmbH"
+    weight = 1
+    contentDir = "content"
+    # languageDirection = 'rtl' for Right-To-Left languages
+
+  #[languages.en]
+  #  title = "Ananke"
+  #  weight = 1
+  #  contentDir = "content-en"
+  #  # languageDirection = 'rtl' for Right-To-Left languages
+  #[languages.fr]
+  #  title = "Ananke Fr"
+  #  weight = 2
+  #  contentDir = "content-fr"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  mainSections = ["news"]
+
+  custom_css = ["custom.css", "special.css"]
+  text_color = "black"
+  cover_dimming_class = "bg-black-0"
+  author = "Jan Christoph Uhde"
+  date_format = "1. January 2006"
+  favicon = ""
+  site_logo = ""
+  description = "The last theme you'll ever need. Maybe."
+  # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-blue"
+  recent_posts_number = 3
+
+[[params.ananke_socials]]
+name = "twitter"
+url = "https://twitter.com/kitamare"
